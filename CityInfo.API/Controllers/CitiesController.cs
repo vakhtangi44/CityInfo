@@ -9,7 +9,7 @@ namespace CityInfo.API.Controllers
     {
         [HttpGet]
         public ActionResult<IEnumerable<CityDto>> GetCities()
-        { 
+        {
             return Ok(CitiesDataStore.Current.Cities);
         }
 
